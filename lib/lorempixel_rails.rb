@@ -1,0 +1,2 @@
+module LorempixelRails
+end
