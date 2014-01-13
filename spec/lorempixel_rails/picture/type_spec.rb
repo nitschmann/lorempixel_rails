@@ -35,4 +35,27 @@ describe LorempixelRails::Picture::Type do
       expect(type_list.include?(random_type)).to be
     end
   end
+
+  describe "#new" do
+    context "without a name" do
+      it { expect(LorempixelRails::Picture::Type.new).to eql("nature") }
+    end
+
+    context "with a name of the list" do
+      let(:type) { LorempixelRails::Picture::Type.new("animals") }
+      let(:type_list) { LorempixelRails::Picture::Type::PICTURE_TYPES }
+
+      it { expect(type).to eql("animals") }
+      it { expect(type_list.include?(type)).to be }
+    end
+
+    context "with a non-valid name" do
+      let(:name) { "blabla" }
+      let(:type) { LorempixelRails::Picture::Type.new(name) }
+      let(:type_list) { LorempixelRails::Picture::Type::PICTURE_TYPES }
+
+      it { expect(type_list.include?(name)).not_to be }
+      it { expect(type).to eql("nature") }
+    end
+  end
 end
