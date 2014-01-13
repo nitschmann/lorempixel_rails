@@ -2,9 +2,6 @@ module LorempixelRails
   module Picture
     require "lorempixel_rails/picture/uri"
     require "lorempixel_rails/picture/type"
-
-    # class << self
-
-    # end
+    require "lorempixel_rails/picture/size"
   end
 end
