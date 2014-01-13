@@ -132,6 +132,7 @@ PLATFORMS
 DEPENDENCIES
   guard-rspec
   lorempixel_rails!
+  pry
   rspec
   rspec-rails
   spork
