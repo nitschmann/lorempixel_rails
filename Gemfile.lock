@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    lorempixel_rails (0.0.1)
+    lorempixel_rails (0.9)
       rails (>= 4.0.0)
 
 GEM
