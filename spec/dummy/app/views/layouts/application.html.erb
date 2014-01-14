@@ -1,13 +1,26 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Dummy</title>
+  <title>Dummy | <%= @page_title %></title>
   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
   <%= csrf_meta_tags %>
+  <style type="text/css">
+    p#headline {
+      background: red;
+      color: #fff;
+      width: 98%;
+      height: auto;
+      padding: 1%;
+      font-size: 120%;
+      font-weight: bold;
+    }
+  </style>
 </head>
 <body>
-
+<p id="headline">
+  LorempixelRails Demo-App
+</p>
 <%= yield %>
 
 </body>

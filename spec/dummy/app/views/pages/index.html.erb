@@ -1,0 +1,16 @@
+<p>Default picture without any options:</p>
+<%= lorempixel_img_tag %>
+<p>Picture with size of 500x300 and without category:</p>
+<%= lorempixel_img_tag(:size => {:width => 500, :height => 300}) %>
+<p>Picture with size of 600x280 and with type 'technics':</p>
+<%= lorempixel_img_tag(:size => {:width => 600, :height => 280}, :type => "technics") %>
+<p>Picture with random type:</p>
+<%= lorempixel_img_tag(:size => {:width => 600, :height => 320}, :type => "random") %>
+<p>Picture with text:</p>
+<%=
+  lorempixel_img_tag(
+    :size => {:width => 500, :height => 200},
+    :type => "people",
+    :text => "Hello People"
+  )
+%>
