@@ -1,4 +1,4 @@
-require "lorempixel_rails"
+require "lorempixel_rails/picture"
 require "pry"
 
 RSpec.configure do |config|
