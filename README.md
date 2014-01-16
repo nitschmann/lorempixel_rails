@@ -1,20 +1,15 @@
 # lorempixel_rails
-==========
+
 
 ###### Version 1.0.0
 
 
 lorempixel_rails is a Ruby Gem for custom image placeholders for views in [Ruby on Rails](http://rubyonrails.org/). The images are provided by [lorempixel](http://lorempixel.com/).
 
-===
-
 ## Requirements
 
 
 Ruby on Rails ( ```>= Version 4.0.0``` )
-
-
-===
 
 ## Installation
 
@@ -30,9 +25,8 @@ Installation by hand:
 
 ``` gem install lorempixel_rails ```
 
-===
-
 ## Usage
+
 
 The Gem offers a simple helper method named ``` lorempixel_img_tag ``` which can be used, similar to the standard ``` image_tag ``` helper, in all Ruby on Rails views.
 
@@ -84,8 +78,6 @@ Picture with text:
 %>
 ```
 
-===
-
 ## Patches & Forks
 
 
@@ -94,8 +86,6 @@ Picture with text:
 * Specific category list pictures
 * Support Caching
 
-
-===
 
 ## License 
 
